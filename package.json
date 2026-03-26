@@ -1,0 +1,16 @@
+{
+  "name": "booking-system-monorepo",
+  "private": true,
+  "packageManager": "pnpm@9.12.1",
+  "scripts": {
+    "dev": "pnpm -r --parallel dev",
+    "dev:web": "pnpm --filter web dev",
+    "dev:api": "pnpm --filter api dev",
+    "build": "pnpm -r build",
+    "lint": "pnpm -r lint",
+    "test": "pnpm -r test",
+    "test:api": "pnpm --filter api test",
+    "db:generate": "pnpm --filter api db:generate",
+    "db:migrate": "pnpm --filter api db:migrate"
+  }
+}
